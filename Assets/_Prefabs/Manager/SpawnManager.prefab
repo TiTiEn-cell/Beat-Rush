@@ -1,0 +1,1788 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4520095555372267770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8432267211934828270}
+  - component: {fileID: 39358636866417275}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8432267211934828270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520095555372267770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &39358636866417275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520095555372267770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d464432a4a35ed43a1171c1b8badaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnCounts:
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 0.114
+    spawnPosition: {x: 12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 0.114
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 0.114
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 0.114
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 0.114
+    spawnPosition: {x: 12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 1.8
+    spawnPosition: {x: 0, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 1.8
+    spawnPosition: {x: -5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 1.8
+    spawnPosition: {x: -10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 1.8
+    spawnPosition: {x: 5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 1.8
+    spawnPosition: {x: 10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 3.45
+    spawnPosition: {x: 12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 3.45
+    spawnPosition: {x: -12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 5.2
+    spawnPosition: {x: -9, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 5.2
+    spawnPosition: {x: -12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 5.2
+    spawnPosition: {x: -12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 5.2
+    spawnPosition: {x: -12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: 12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: 12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: 0, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: 0, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 6.9
+    spawnPosition: {x: -12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 8.7
+    spawnPosition: {x: -12, y: 4.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 8.7
+    spawnPosition: {x: -12, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 8.7
+    spawnPosition: {x: -12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 8.7
+    spawnPosition: {x: -12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 8.7
+    spawnPosition: {x: -12, y: 0.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 10.35
+    spawnPosition: {x: 12, y: -0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 10.35
+    spawnPosition: {x: 12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 10.35
+    spawnPosition: {x: 12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 10.35
+    spawnPosition: {x: 12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 10.35
+    spawnPosition: {x: 12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 13, y: 4}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 14, y: 2}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 15, y: 0}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 16, y: -2}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 11, y: 8}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 10, y: 10}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 9, y: 12}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 8, y: 14}
+    spawnRotation: {x: 0, y: 0, z: -0.97337925, w: 0.22920035}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: -12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.1
+    spawnPosition: {x: 12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 12.5
+    spawnPosition: {x: 25, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 13.5
+    spawnPosition: {x: 25, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 14.5
+    spawnPosition: {x: 25, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 15.5
+    spawnPosition: {x: 25, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 17.7
+    spawnPosition: {x: -25, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 18.7
+    spawnPosition: {x: -25, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 19.7
+    spawnPosition: {x: -25, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 21.9
+    spawnPosition: {x: -8.5, y: 25}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 23.7
+    spawnPosition: {x: -3, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 26.1
+    spawnPosition: {x: 25, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 26.1
+    spawnPosition: {x: 5, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 27.1
+    spawnPosition: {x: 25, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 28.1
+    spawnPosition: {x: 25, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 28.1
+    spawnPosition: {x: -4, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 29.1
+    spawnPosition: {x: -25, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 29.4
+    spawnPosition: {x: -9.1, y: 25}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 31.4
+    spawnPosition: {x: 25, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 31.8
+    spawnPosition: {x: -25, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 33.5
+    spawnPosition: {x: 0.2, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 34.5
+    spawnPosition: {x: 6.2, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 35.5
+    spawnPosition: {x: 3.1, y: -25}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 5909767561334842766, guid: 05cca9498feb58347b5bb5dd6e574491, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 36.5
+    spawnPosition: {x: -10, y: 25}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 2258794873831741784, guid: 0a909407982e99b4598e897c32885b07, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 38
+    spawnPosition: {x: -25, y: -0.1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.2
+    spawnPosition: {x: 12, y: -5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.2
+    spawnPosition: {x: 12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.3
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.3
+    spawnPosition: {x: 12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.4
+    spawnPosition: {x: 12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.4
+    spawnPosition: {x: 12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.5
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.5
+    spawnPosition: {x: 12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.6
+    spawnPosition: {x: 12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.6
+    spawnPosition: {x: 12, y: -0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.7
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.7
+    spawnPosition: {x: 12, y: 0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.8
+    spawnPosition: {x: 12, y: 1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.8
+    spawnPosition: {x: 12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.9
+    spawnPosition: {x: 12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 41.9
+    spawnPosition: {x: 12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 42
+    spawnPosition: {x: 12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 42
+    spawnPosition: {x: 12, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 42.1
+    spawnPosition: {x: 12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43
+    spawnPosition: {x: 12, y: 5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43
+    spawnPosition: {x: 12, y: 4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.1
+    spawnPosition: {x: 12.1, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.1
+    spawnPosition: {x: 12.1, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.2
+    spawnPosition: {x: 12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.2
+    spawnPosition: {x: 12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.3
+    spawnPosition: {x: 12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.3
+    spawnPosition: {x: 12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.4
+    spawnPosition: {x: 12, y: 1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.4
+    spawnPosition: {x: 12, y: 0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.5
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.5
+    spawnPosition: {x: 12, y: -0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.6
+    spawnPosition: {x: 12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.6
+    spawnPosition: {x: 12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.7
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.7
+    spawnPosition: {x: 12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.8
+    spawnPosition: {x: 12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.8
+    spawnPosition: {x: 12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 43.9
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.6
+    spawnPosition: {x: -12, y: -5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.6
+    spawnPosition: {x: -12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.7
+    spawnPosition: {x: -12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.7
+    spawnPosition: {x: -12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.8
+    spawnPosition: {x: -12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.8
+    spawnPosition: {x: -12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.9
+    spawnPosition: {x: -12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.9
+    spawnPosition: {x: -12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 45
+    spawnPosition: {x: -12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 45
+    spawnPosition: {x: -12, y: -0.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.6
+    spawnPosition: {x: 11, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.6
+    spawnPosition: {x: 10.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.7
+    spawnPosition: {x: 10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.7
+    spawnPosition: {x: 9.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.8
+    spawnPosition: {x: 9, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.8
+    spawnPosition: {x: 8.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.9
+    spawnPosition: {x: 8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 44.9
+    spawnPosition: {x: 7.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 45
+    spawnPosition: {x: 7, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 45
+    spawnPosition: {x: 6.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.4
+    spawnPosition: {x: -12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.4
+    spawnPosition: {x: -12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.4
+    spawnPosition: {x: -2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.4
+    spawnPosition: {x: 2.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.5
+    spawnPosition: {x: -12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.5
+    spawnPosition: {x: -12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.5
+    spawnPosition: {x: -1.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.5
+    spawnPosition: {x: 2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.6
+    spawnPosition: {x: -12, y: 1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.6
+    spawnPosition: {x: -12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.6
+    spawnPosition: {x: -1, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.6
+    spawnPosition: {x: 1.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.7
+    spawnPosition: {x: -12, y: 0.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.7
+    spawnPosition: {x: -12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.7
+    spawnPosition: {x: -0.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.7
+    spawnPosition: {x: 1, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.8
+    spawnPosition: {x: -12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.8
+    spawnPosition: {x: -12, y: -0.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.8
+    spawnPosition: {x: 0, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 46.8
+    spawnPosition: {x: 0.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.1
+    spawnPosition: {x: -10.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.1
+    spawnPosition: {x: -10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.1
+    spawnPosition: {x: 10.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.1
+    spawnPosition: {x: 10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.2
+    spawnPosition: {x: 9.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.2
+    spawnPosition: {x: 9, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.2
+    spawnPosition: {x: -9.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.2
+    spawnPosition: {x: -9, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.3
+    spawnPosition: {x: -8.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.3
+    spawnPosition: {x: -8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.3
+    spawnPosition: {x: 8.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.3
+    spawnPosition: {x: 8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.4
+    spawnPosition: {x: 7.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.4
+    spawnPosition: {x: 7, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.4
+    spawnPosition: {x: -7.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.4
+    spawnPosition: {x: -7, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.5
+    spawnPosition: {x: -6.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.5
+    spawnPosition: {x: -6, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.5
+    spawnPosition: {x: 6.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 48.5
+    spawnPosition: {x: 6, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50
+    spawnPosition: {x: 12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50
+    spawnPosition: {x: 12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50
+    spawnPosition: {x: 12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.1
+    spawnPosition: {x: 12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.2
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.2
+    spawnPosition: {x: 12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.2
+    spawnPosition: {x: 12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.3
+    spawnPosition: {x: 12, y: 1}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.3
+    spawnPosition: {x: 12, y: 0.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.3
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 50.3
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: -10.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: 10.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: -10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: 10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: -9.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: 9.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: -9, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.6
+    spawnPosition: {x: 9, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 0, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 0.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -0.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 1, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -1, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 1.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -1.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 2, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -2, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 2.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -2.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 3, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -3, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 3.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -3.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 4, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -4, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 4.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -4.5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: 5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 51.7
+    spawnPosition: {x: -5, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -11, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -10.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -9.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -9, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -8.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -7.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -7, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -6.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -5.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -4.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -3.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -3, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -2.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -1.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -1, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 11, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 10.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 9.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 9, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 8.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 7.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 7, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 6.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 5.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 4.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 3.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 3, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 2.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 1.5, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: 1, y: 6}
+    spawnRotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 4.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: 1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 53.3
+    spawnPosition: {x: -12, y: -1}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 55
+    spawnPosition: {x: 12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 55.2
+    spawnPosition: {x: 10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 55.4
+    spawnPosition: {x: 8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 55.6
+    spawnPosition: {x: 6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 55.8
+    spawnPosition: {x: 4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 56
+    spawnPosition: {x: 2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 56.2
+    spawnPosition: {x: 0, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 56.4
+    spawnPosition: {x: -2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 56.6
+    spawnPosition: {x: -4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 56.8
+    spawnPosition: {x: -6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 57
+    spawnPosition: {x: -8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 57.2
+    spawnPosition: {x: -10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 57.4
+    spawnPosition: {x: -12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 57.6
+    spawnPosition: {x: -12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 57.8
+    spawnPosition: {x: -12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 58
+    spawnPosition: {x: -12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 58.2
+    spawnPosition: {x: -12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 58.4
+    spawnPosition: {x: -12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 58.6
+    spawnPosition: {x: -12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 58.8
+    spawnPosition: {x: -10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 59
+    spawnPosition: {x: -8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 59.2
+    spawnPosition: {x: -6, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 59.4
+    spawnPosition: {x: -4, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 59.6
+    spawnPosition: {x: -2, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 59.8
+    spawnPosition: {x: 0, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 60
+    spawnPosition: {x: 2, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 60.2
+    spawnPosition: {x: 4, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 60.4
+    spawnPosition: {x: 6, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 60.6
+    spawnPosition: {x: 8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 60.8
+    spawnPosition: {x: 10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 61
+    spawnPosition: {x: 12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 61.2
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 61.4
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 61.6
+    spawnPosition: {x: 12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 61.8
+    spawnPosition: {x: 12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 62
+    spawnPosition: {x: 12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 62.2
+    spawnPosition: {x: 12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 62.4
+    spawnPosition: {x: 10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 62.6
+    spawnPosition: {x: 8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 62.8
+    spawnPosition: {x: 6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63
+    spawnPosition: {x: 4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.2
+    spawnPosition: {x: 2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.4
+    spawnPosition: {x: 0, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -1.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -2.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -3}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -3.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -4.5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.5
+    spawnPosition: {x: 12, y: -5}
+    spawnRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.6
+    spawnPosition: {x: -2, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 63.8
+    spawnPosition: {x: -4, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 64
+    spawnPosition: {x: -6, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 64.2
+    spawnPosition: {x: -8, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 64.4
+    spawnPosition: {x: -10, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 64.6
+    spawnPosition: {x: -12, y: 6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 64.8
+    spawnPosition: {x: -12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65
+    spawnPosition: {x: -12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.2
+    spawnPosition: {x: -12, y: 0}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: -2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 1.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 2}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 2.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 3}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 3.5}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 450753531444879277, guid: 2a6ea9fd294c4de47923e9558851dd6b, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.4
+    spawnPosition: {x: -12, y: 4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.6
+    spawnPosition: {x: -12, y: -4}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 65.8
+    spawnPosition: {x: -12, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 66
+    spawnPosition: {x: -10, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 66.2
+    spawnPosition: {x: -8, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  - objSpawn: {fileID: 5137883553945042392, guid: 9aaa17722f52ae04b88994850a2fab78, type: 3}
+    parentPool: {fileID: 0}
+    spawnTime: 66.4
+    spawnPosition: {x: -6, y: -6}
+    spawnRotation: {x: 0, y: 0, z: 0, w: 1}
+  objSpawn: {fileID: 0}
