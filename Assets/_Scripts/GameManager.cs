@@ -100,6 +100,8 @@ public class GameManager : MonoBehaviour
 
     void SavingBestProgress()
     {
+
+        //Lưu trữ best progress
         if (PlayerPrefs.HasKey("bestProgress_" + levelName))
         {
             highestProgress = PlayerPrefs.GetFloat("bestProgress_" + levelName);
