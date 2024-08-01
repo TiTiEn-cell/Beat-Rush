@@ -7,16 +7,10 @@ public class PlayerCollider : MonoBehaviour
     //Public variables
     public bool isDeath;
     //Private variables
-    private SpawnManager spawnManager;
-    private MusicManager musicManager;
+    [SerializeField] private SpawnManager spawnManager;
+    [SerializeField] private MusicManager musicManager;
     private int deathCount;
     //Protected variables
-
-    private void Awake()
-    {
-        spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
-        musicManager = GameObject.Find("MusicManager").GetComponent<MusicManager>();
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -39,23 +33,33 @@ public class PlayerCollider : MonoBehaviour
             isDeath = true;
             if (deathCount == 1)
             {
-                GameManager.instance.GetReviveUI();
-                GameManager.instance.speedUpBtn.gameObject.SetActive(false);
-                //GameManager.instance.movementBtn.gameObject.SetActive(false);
-                transform.parent.gameObject.SetActive(false);
-                spawnManager.gameObject.SetActive(false);
-                musicManager.PauseMusic();
+                FirstDead();
             }
             else
             {
-                GameManager.instance.GetRestartUI();
-                GameManager.instance.speedUpBtn.gameObject.SetActive(false);
-                GameManager.instance.movementBtn.gameObject.SetActive(false);
-                transform.parent.gameObject.SetActive(false);
-                spawnManager.gameObject.SetActive(false);
-                musicManager.PauseMusic();
+                SecondDead();
             }
             
         }
+    }
+
+    void FirstDead()
+    {
+        GameManager.instance.GetReviveUI();
+        GameManager.instance.speedUpBtn.gameObject.SetActive(false);
+        //GameManager.instance.movementBtn.gameObject.SetActive(false);
+        transform.parent.gameObject.SetActive(false);
+        spawnManager.gameObject.SetActive(false);
+        musicManager.PauseMusic();
+    }
+
+    void SecondDead()
+    {
+        GameManager.instance.GetRestartUI();
+        GameManager.instance.speedUpBtn.gameObject.SetActive(false);
+        GameManager.instance.movementBtn.gameObject.SetActive(false);
+        transform.parent.gameObject.SetActive(false);
+        spawnManager.gameObject.SetActive(false);
+        musicManager.PauseMusic();
     }
 }

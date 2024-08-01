@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager instance;
     [Header("GameUI")]//----------------------------------------------//
     public string levelName;
@@ -23,28 +22,35 @@ public class GameManager : MonoBehaviour
     public Button speedUpBtn;
     public GameObject movementBtn;
 
-    [Header("HomeUI")]//----------------------------------------------//
+    [Header("LevelSelectUI")]//----------------------------------------------//
     public GameObject settingUI;
     public Button settingBtn;
     public Image musicBtn;
     public Sprite musicOn, musicOff;
 
+    [Header("HomeUI")]
+    [SerializeField] private GameObject listSongUI;
 
     [Header("Side")]//----------------------------------------------//
     public float progress;
     [SerializeField] private float timeCountDown = 5f;
     [SerializeField] private float highestProgress;
-    private bool hasStartedTween;
 
-    private GameObject player;
+
+    private bool hasStartedTween;
+    [SerializeField] private GameObject player;
     private PlayerImmotal playerImmotal;
     private PlayerAnimator playerAnimator;
-    private GameObject spawnManager;
-    private MusicManager musicManager;
+    [SerializeField] private GameObject spawnManager;
+    [SerializeField] private MusicManager musicManager;
     private float previousTimeCountDown;
-    //Protected variables
 
     private void Awake()
+    {
+        InitAwake();
+    }
+
+    void InitAwake()
     {
         if (instance == null)
         {
@@ -54,22 +60,22 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        //______________________________UI___________________________________________
 
-        //___________________________________________________________________________
-        player = GameObject.Find("Player");
-        spawnManager = GameObject.Find("SpawnManager");
-        musicManager = GameObject.Find("MusicManager").GetComponent<MusicManager>();
         if (player != null)
         {
             playerImmotal = player.GetComponentInChildren<PlayerImmotal>();
             playerAnimator = player.transform.Find("PlayerAnimator").GetComponent<PlayerAnimator>();
         }
-
     }
 
     // Start is called before the first frame update
     void Start()
+    {
+        InitStart();
+        SavingBestProgress();
+    }
+
+    void InitStart()
     {
         if (reviveUI != null) reviveUI.SetActive(false);
         if (restartUI != null) restartUI.SetActive(false);
@@ -78,19 +84,11 @@ public class GameManager : MonoBehaviour
         if (newBestUI != null) newBestUI.SetActive(false);
         if (countDownText != null) countDownText.text = "5";
         if (settingUI != null) settingUI.SetActive(false);
+        if (listSongUI != null) listSongUI.SetActive(false);
         previousTimeCountDown = Mathf.FloorToInt(timeCountDown);
         CheckMusicBtnSprite();
-
-        if (PlayerPrefs.HasKey("bestProgress_" + levelName))
-        {
-            highestProgress = PlayerPrefs.GetFloat("bestProgress_" + levelName);
-        }
-        else
-        {
-            highestProgress = 0;
-        }
-
     }
+
 
     // Update is called once per frame
     void Update()
@@ -99,6 +97,19 @@ public class GameManager : MonoBehaviour
         BarProgress();
         TrackingBarProgress();
     }
+
+    void SavingBestProgress()
+    {
+        if (PlayerPrefs.HasKey("bestProgress_" + levelName))
+        {
+            highestProgress = PlayerPrefs.GetFloat("bestProgress_" + levelName);
+        }
+        else
+        {
+            highestProgress = 0;
+        }
+    }
+
 
     void TrackingBarProgress()
     {
@@ -186,28 +197,28 @@ public class GameManager : MonoBehaviour
         if (barProgressInGame != null && musicManager != null)
         {
             if (!restartUI.activeInHierarchy)
-        {
+            {
 
                 barProgressInGame.value = musicManager.GetMusicTime() / musicManager.GetMusicLength();
-            
-        }
-        else
-        {
-            if (!hasStartedTween)
-            {
-                hasStartedTween = true;
-                barProgressInGame.value = 0;
-                LeanTween.value(gameObject, 0f, progress, 4f).setEase(LeanTweenType.easeOutQuad).setOnUpdate((float val) =>
-                {
-                    barProgressInGame.value = val;
-                    textBarProgress.text = Mathf.FloorToInt(val * 100) + "%";
-                    if (val > highestProgress)
-                    {
-                        newBestUI.SetActive(true);
-                    }
-                });
+
             }
-        }
+            else
+            {
+                if (!hasStartedTween)
+                {
+                    hasStartedTween = true;
+                    barProgressInGame.value = 0;
+                    LeanTween.value(gameObject, 0f, progress, 4f).setEase(LeanTweenType.easeOutQuad).setOnUpdate((float val) =>
+                    {
+                        barProgressInGame.value = val;
+                        textBarProgress.text = Mathf.FloorToInt(val * 100) + "%";
+                        if (val > highestProgress)
+                        {
+                            newBestUI.SetActive(true);
+                        }
+                    });
+                }
+            }
         }
     }
 
@@ -281,5 +292,18 @@ public class GameManager : MonoBehaviour
     public void GetSettingUI()
     {
         settingUI.SetActive(true);
+    }
+
+    public void GetListSongUI()
+    {
+        if (!listSongUI.activeInHierarchy)
+        {
+            listSongUI.SetActive(true);
+        }
+        else
+        {
+            listSongUI.SetActive(false);
+        }
+        
     }
 }

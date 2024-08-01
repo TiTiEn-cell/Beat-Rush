@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
     // Thực hiện việc di chuyển của người chơi
     void Movement()
     {
-        horizontalInput = /*joystick.Horizontal;*/ Input.GetAxisRaw("Horizontal");
-        verticalInput = /*joystick.Vertical;*/ Input.GetAxisRaw("Vertical");
+        horizontalInput = joystick.Horizontal; /*Input.GetAxisRaw("Horizontal");*/
+        verticalInput = joystick.Vertical; /*Input.GetAxisRaw("Vertical");*/
 
         movementDirection = new Vector2(horizontalInput, verticalInput);
 

@@ -34,7 +34,7 @@ public class PlayerSpeedUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpeedUp();
+       /* SpeedUp();*/
     }
 
     // Thực hiện kĩ năng tăng tốc
@@ -42,7 +42,7 @@ public class PlayerSpeedUp : MonoBehaviour
     {
         // Xác định hướng player di chuyển
         Vector2 dashDirection = playerController.playerMovement.movementDirection;
-        if (Input.GetKeyDown(KeyCode.Space) && canSpeedUp && !isSpeedUp)
+        if (/*Input.GetKeyDown(KeyCode.Space) && */canSpeedUp && !isSpeedUp)
         {
             playerController.playerMovement.speedMovement += speedUp;
             tr.emitting = true;

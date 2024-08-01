@@ -18,13 +18,12 @@ public class SpawnManager : MonoBehaviour
     public List<SpawnCount> spawnCounts;
     public GameObject objSpawn;
     //Private variables
-    private MusicManager musicManager;
+    [SerializeField] private MusicManager musicManager;
     private int spawnIndex;
     private List<string> usedNames; // Sử dụng List để kiểm tra tên đã tồn tại
 
     private void Awake()
     {
-        musicManager = GameObject.Find("MusicManager").GetComponent<MusicManager>();
         usedNames = new List<string>();
     }
 
@@ -32,8 +31,15 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         spawnIndex = 0;
+
         for (int i = 0; i < spawnCounts.Count; i++)
         {
+            // Tìm kiếm theo tên GameObject
+            GameObject parentPoolObj = GameObject.Find(spawnCounts[i].objSpawn.name + "Pools");
+            if (parentPoolObj != null)
+            {
+                spawnCounts[i].parentPool = parentPoolObj.transform;
+            }
             string nameObj = spawnCounts[i].objSpawn.name + "(" + spawnCounts[i].spawnPosition.x + ", " + spawnCounts[i].spawnPosition.y + ")";
             if (!usedNames.Contains(nameObj))
             {
@@ -43,6 +49,7 @@ public class SpawnManager : MonoBehaviour
                 objSpawn.transform.SetParent(spawnCounts[i].parentPool);
                 usedNames.Add(nameObj); // Thêm tên vào List
             }
+            
         }
 
     }

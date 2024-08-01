@@ -21,7 +21,7 @@ public class MusicManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Time: " + GetMusicTime());
+        /*Debug.Log("Time: " + GetMusicTime());*/
         audioSource.volume = musicVolume;
         GetSpectrumData();
         if (sample != null && sample.Length > 0)
